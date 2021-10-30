@@ -1,11 +1,18 @@
 import React from 'react';
 import './App.css';
 
+import MyProvider from './context/MyProvider';
+import Footer from './components/Footer';
+import Body from './components/Body';
 const App = () => {
+
   return (
-    <main>
-     <h1>Welcome to React</h1>
-    </main>
+    <MyProvider>
+      <main>
+        <Body />
+        <Footer />
+      </main>
+    </MyProvider>
   );
 }
 

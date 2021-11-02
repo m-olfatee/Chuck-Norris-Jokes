@@ -15,7 +15,7 @@ const MyProvider = (props) => {
     const [joke, setJoke] = useState(null)
 
     const [display, setDisplay] = useState(null)
-
+    
     const jokeURL = `https://api.chucknorris.io/jokes/random?category=${select}`
 
     useEffect(() => {
